@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article | Nova Journal</title>
+  <meta name="description" content="Read the full article on Nova Journal.">
+  <meta name="theme-color" content="#080c1a">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+  <label for="nav-toggle" class="burger"><span></span></label>
+  <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Articles</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<article id="article">
+  <header class="wrap article-head">
+    <span class="chip" id="post-chip">Loading</span>
+    <h1 id="post-title">Loading&hellip;</h1>
+    <div class="byline">
+      <span class="avatar" aria-hidden="true"></span>
+      <span id="post-byline"></span>
+    </div>
+  </header>
+  <div class="wrap" id="article-wrap" hidden>
+    <div class="article-cover art art-a" id="post-cover" role="img" aria-label="Article cover art"></div>
+    <div class="article-layout">
+      <aside class="toc" id="toc" aria-label="On this page">
+        <h4>On this page</h4>
+        <ol id="toc-list"></ol>
+      </aside>
+      <div class="prose">
+        <div id="post-body"></div>
+        <div class="author-box">
+          <span class="avatar" aria-hidden="true"></span>
+          <div><strong id="post-author"></strong><p>Writer at Nova Journal.</p></div>
+        </div>
+        <section class="comments" aria-labelledby="comments-title">
+          <h2 id="comments-title">Join the discussion <span class="meta" id="comment-count" style="font-family:var(--body);font-size:1rem"></span></h2>
+          <form class="comment-form" id="comment-form" novalidate>
+            <div class="form-grid">
+              <div><label for="c-name">Name</label><input class="input" id="c-name" name="name" type="text" maxlength="60" required></div>
+              <div><label for="c-text">Comment</label><textarea class="textarea" id="c-text" name="body" maxlength="2000" required></textarea></div>
+              <div><button class="btn btn-primary" type="submit">Post comment</button></div>
+              <p class="status" id="comment-status" role="status" hidden></p>
+            </div>
+          </form>
+          <ul class="comment-list" id="comment-list"></ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</article>
+<section class="wrap section" id="related-section" style="padding-top:0" hidden>
+  <div class="section-head"><h2>Keep reading</h2></div>
+  <div class="related" id="related"></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+        <p>Plain-language writing about AI, space, hardware and the cities we are building next.</p>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul><li><a href="blog.html">All articles</a></li><li><a href="blog.html?category=AI">AI</a></li><li><a href="blog.html?category=Space">Space</a></li></ul>
+      </div>
+      <div>
+        <h4>Journal</h4>
+        <ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Pitch a story</a></li><li><a href="admin.html">Admin</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li><a href="#">RSS feed</a></li><li><a href="#">Mastodon</a></li><li><a href="#">GitHub</a></li></ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Nova Journal. Written by people, for people.</p>
+  </div>
+</footer>
+  <script type="module" src="js/post.js"></script>
+</body>
+</html>

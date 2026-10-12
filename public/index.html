@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova Journal | Notes from the near future</title>
+  <meta name="description" content="A futuristic blog about AI, space, hardware and the cities we build next.">
+  <meta name="theme-color" content="#080c1a">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+  <label for="nav-toggle" class="burger"><span></span></label>
+  <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="blog.html">Articles</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="wrap hero">
+  <div>
+    <h1>Notes from the near future.</h1>
+    <p class="lead">Nova Journal explains the technology that is about to change daily life: smarter machines, quieter hardware, and cities that think. No hype, just clear writing.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" id="hero-link" href="blog.html">Read the latest story</a>
+      <a class="btn" href="blog.html">Browse all articles</a>
+    </div>
+  </div>
+  <div class="orbit" role="img" aria-label="Animated planet with orbiting satellites">
+    <div class="ring r3"><span class="sat"></span></div>
+    <div class="ring r2"><span class="sat"></span></div>
+    <div class="ring r1"><span class="sat"></span></div>
+    <div class="planet"></div>
+    <a class="orbit-card" id="orbit-card" href="blog.html">
+      <small>Newest post</small>
+      <strong id="orbit-title">Loading&hellip;</strong>
+    </a>
+  </div>
+</section>
+
+<section class="wrap section" style="padding-top:1rem">
+  <div class="section-head">
+    <h2>Featured reads</h2>
+    <a class="link-more" href="blog.html">See every article</a>
+  </div>
+  <div class="featured" id="featured" aria-live="polite"><p class="empty">Loading articles&hellip;</p></div>
+</section>
+
+<section class="wrap section" style="padding-top:1rem">
+  <div class="section-head"><h2>Pick a topic</h2></div>
+  <div class="topics" id="topics"></div>
+</section>
+
+<section class="wrap section" style="padding-top:1rem">
+  <div class="section-head">
+    <h2>Latest articles</h2>
+    <a class="link-more" href="blog.html">Open the archive</a>
+  </div>
+  <div class="post-list" id="latest"></div>
+</section>
+
+<section class="wrap section" style="padding-top:1rem">
+  <div class="signal">
+    <div>
+      <h2>One email every Friday.</h2>
+      <p>The week's best story, two links worth your time, and nothing else.</p>
+    </div>
+    <form id="newsletter-form" class="field-row" novalidate>
+      <label for="email-home" style="position:absolute;left:-9999px">Email address</label>
+      <input class="input" id="email-home" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+      <button class="btn btn-primary" type="submit">Join the list</button>
+      <p class="status" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+        <p>Plain-language writing about AI, space, hardware and the cities we are building next.</p>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul><li><a href="blog.html">All articles</a></li><li><a href="blog.html?category=AI">AI</a></li><li><a href="blog.html?category=Space">Space</a></li></ul>
+      </div>
+      <div>
+        <h4>Journal</h4>
+        <ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Pitch a story</a></li><li><a href="admin.html">Admin</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li><a href="#">RSS feed</a></li><li><a href="#">Mastodon</a></li><li><a href="#">GitHub</a></li></ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Nova Journal. Written by people, for people.</p>
+  </div>
+</footer>
+  <script type="module" src="js/home.js"></script>
+  <script type="module" src="js/forms.js"></script>
+</body>
+</html>

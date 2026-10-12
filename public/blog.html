@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Articles | Nova Journal</title>
+  <meta name="description" content="Browse every Nova Journal article by topic.">
+  <meta name="theme-color" content="#080c1a">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+  <label for="nav-toggle" class="burger"><span></span></label>
+  <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="blog.html" aria-current="page">Articles</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="wrap">
+  <div class="page-head">
+    <h1>All articles</h1>
+    <p>Search by title or pick a topic. Everything we have published, newest first.</p>
+  </div>
+</section>
+<section class="wrap section" style="padding-top:1.5rem">
+  <div class="tools">
+    <div class="filters" id="filters" role="group" aria-label="Filter by topic"></div>
+    <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+      <span class="meta" id="result-count" aria-live="polite"></span>
+      <label for="search" style="position:absolute;left:-9999px">Search articles</label>
+      <input class="input" id="search" type="search" placeholder="Search articles" maxlength="80">
+    </div>
+  </div>
+  <div class="post-list" id="archive-list" aria-live="polite"><p class="empty">Loading articles&hellip;</p></div>
+  <div class="load-more"><button class="btn" id="load-more" type="button" hidden>Load more articles</button></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+        <p>Plain-language writing about AI, space, hardware and the cities we are building next.</p>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul><li><a href="blog.html">All articles</a></li><li><a href="blog.html?category=AI">AI</a></li><li><a href="blog.html?category=Space">Space</a></li></ul>
+      </div>
+      <div>
+        <h4>Journal</h4>
+        <ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Pitch a story</a></li><li><a href="admin.html">Admin</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li><a href="#">RSS feed</a></li><li><a href="#">Mastodon</a></li><li><a href="#">GitHub</a></li></ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Nova Journal. Written by people, for people.</p>
+  </div>
+</footer>
+  <script type="module" src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Nova Journal</title>
+  <meta name="description" content="Get in touch with the Nova Journal team.">
+  <meta name="theme-color" content="#080c1a">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+  <label for="nav-toggle" class="burger"><span></span></label>
+  <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Articles</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="wrap">
+  <div class="page-head">
+    <h1>Say hello.</h1>
+    <p>Have a story idea, a correction, or a question? Send a note and a human will reply within two working days.</p>
+  </div>
+</section>
+<section class="wrap section" style="padding-top:1.5rem">
+  <div class="split">
+    <form class="panel form-grid" id="contact-form" novalidate>
+      <div><label for="name">Your name</label><input class="input" id="name" name="name" type="text" maxlength="80" autocomplete="name" required></div>
+      <div><label for="email">Email address</label><input class="input" id="email" name="email" type="email" maxlength="200" autocomplete="email" required></div>
+      <div>
+        <label for="topic">What is this about?</label>
+        <select class="select" id="topic" name="topic">
+          <option>Pitch a story</option>
+          <option>Report a correction</option>
+          <option>Partnerships</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div><label for="message">Message</label><textarea class="textarea" id="message" name="message" maxlength="4000" required></textarea></div>
+      <div><button class="btn btn-primary" type="submit">Send message</button></div>
+      <p class="status" role="status" hidden></p>
+    </form>
+    <div>
+      <h2>Other ways to reach us</h2>
+      <ul class="contact-list">
+        <li><strong>Editorial</strong>editor@novajournal.example</li>
+        <li><strong>Corrections</strong>corrections@novajournal.example</li>
+        <li><strong>Press</strong>press@novajournal.example</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+        <p>Plain-language writing about AI, space, hardware and the cities we are building next.</p>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul><li><a href="blog.html">All articles</a></li><li><a href="blog.html?category=AI">AI</a></li><li><a href="blog.html?category=Space">Space</a></li></ul>
+      </div>
+      <div>
+        <h4>Journal</h4>
+        <ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Pitch a story</a></li><li><a href="admin.html">Admin</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li><a href="#">RSS feed</a></li><li><a href="#">Mastodon</a></li><li><a href="#">GitHub</a></li></ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Nova Journal. Written by people, for people.</p>
+  </div>
+</footer>
+  <script type="module" src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin | Nova Journal</title>
+  <meta name="description" content="Manage Nova Journal.">
+  <meta name="theme-color" content="#080c1a">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+  <label for="nav-toggle" class="burger"><span></span></label>
+  <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Articles</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="wrap section" style="padding-top:2rem">
+  <div id="login" class="panel admin-card" hidden>
+    <h1 style="font-size:1.6rem">Admin sign in</h1>
+    <form id="login-form" class="form-grid" novalidate>
+      <div><label for="password">Password</label><input class="input" id="password" name="password" type="password" autocomplete="current-password" required></div>
+      <div><button class="btn btn-primary" type="submit">Sign in</button></div>
+      <p class="status" id="login-status" role="status" hidden></p>
+    </form>
+  </div>
+
+  <div id="dash" hidden>
+    <div class="admin-bar">
+      <h1>Dashboard</h1>
+      <button class="btn btn-sm" id="logout" type="button">Sign out</button>
+    </div>
+    <div id="stats"></div>
+    <div class="tabs" id="tabs" role="group" aria-label="Sections">
+      <button type="button" data-tab="posts" aria-pressed="true">Posts</button>
+      <button type="button" data-tab="comments" aria-pressed="false">Comments</button>
+      <button type="button" data-tab="messages" aria-pressed="false">Messages</button>
+      <button type="button" data-tab="subscribers" aria-pressed="false">Subscribers</button>
+    </div>
+    <div id="panel"></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark"></span>Nova Journal</a>
+        <p>Plain-language writing about AI, space, hardware and the cities we are building next.</p>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul><li><a href="blog.html">All articles</a></li><li><a href="blog.html?category=AI">AI</a></li><li><a href="blog.html?category=Space">Space</a></li></ul>
+      </div>
+      <div>
+        <h4>Journal</h4>
+        <ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Pitch a story</a></li><li><a href="admin.html">Admin</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li><a href="#">RSS feed</a></li><li><a href="#">Mastodon</a></li><li><a href="#">GitHub</a></li></ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Nova Journal. Written by people, for people.</p>
+  </div>
+</footer>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
